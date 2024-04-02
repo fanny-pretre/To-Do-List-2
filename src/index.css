@@ -1,14 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
-  --primary-font : "Oswald", sans-serif;
-  --secondary-font : "Source Sans 3", sans-serif;
-  --color-1 : #F23D5E; /*pink*/
-  --color-2 : #9163F2; /*purple*/
-  --color-3 : ##05AFF2; /*blue*/
-  --color-4 : #07D950; /*green*/
-  --color-5 : #F2F2F2; /*blanc*/
-  --color-6 : #262625; /*noir*/
+  --primary-font: "Oswald", sans-serif;
+  --secondary-font: "Source Sans 3", sans-serif;
 }
 
 * {
@@ -22,7 +16,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: var(--secondary-font);
-  font-weight: 600 ;
+  font-weight: 600;
   background-color: var(--color-6);
   color: white;
 }
@@ -41,45 +35,50 @@ form {
 input {
   width: 100%;
   padding: 1rem;
-  border: 0.2rem solid rgba(93, 12, 255, 1); 
+  border: 0.2rem solid rgba(93, 12, 255, 1);
   background-color: var(--color-6);
-  color: white; 
+  color: white;
   font-family: var(--secondary-font);
   font-size: 1rem;
 }
 
 button {
-  border: 0px ;
+  border: 0px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   cursor: pointer;
-  background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
   color: white;
   border-radius: 2px;
-
 }
 
 .addButton {
-  border-top-left-radius: 0 ;
-  border-bottom-left-radius: 0 ;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 button:hover {
-  border:  2px solid var(--color-5); 
+  border: 2px solid var(--color-5);
 }
 
-.toDo{
-
+.toDo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px auto;
-  background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
   padding: 16px;
   border-radius: 5px;
   width: 90%;
-
 }
 
 .completed {
@@ -97,7 +96,6 @@ button:hover {
   height: 1.5rem;
   width: 6rem;
 }
-
 
 .bottom {
   margin-top: 5rem;
